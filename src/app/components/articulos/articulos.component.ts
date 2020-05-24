@@ -44,9 +44,9 @@ export class ArticulosComponent implements OnInit {
   constructor(
     public formBuilder: FormBuilder,
     private articulosService: MockArticulosService,
-    private articulosFamiliasService: MockArticulosFamiliasService,
+    //private articulosFamiliasService: MockArticulosFamiliasService,
     //private articulosService: ArticulosService,
-    // private articulosFamiliasService: ArticulosFamiliasService,
+    private articulosFamiliasService: ArticulosFamiliasService,
   )
  {}
 
