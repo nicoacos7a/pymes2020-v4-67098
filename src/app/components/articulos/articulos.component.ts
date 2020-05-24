@@ -4,7 +4,7 @@ import { ArticuloFamilia, ArticulosFamilias } from "../../models/articulo-famili
 import { MockArticulosService } from "../../services/mock-articulos.service";
 import { MockArticulosFamiliasService } from "../../services/mock-articulos-familias.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import {ArticulosFamiliasService} from "../../services/articulos-familias.service";
+import { ArticulosFamiliasService } from "../../services/articulos-familias.service";
 import { ArticulosService } from "../../services/articulos.service";
 
 @Component({
@@ -43,10 +43,10 @@ export class ArticulosComponent implements OnInit {
 
   constructor(
     public formBuilder: FormBuilder,
-    //private articulosService: MockArticulosService,
-    //private articulosFamiliasService: MockArticulosFamiliasService,
-    private articulosService: ArticulosService,
-    private articulosFamiliasService: ArticulosFamiliasService,
+    private articulosService: MockArticulosService,
+    private articulosFamiliasService: MockArticulosFamiliasService,
+    //private articulosService: ArticulosService,
+    // private articulosFamiliasService: ArticulosFamiliasService,
   )
  {}
 
