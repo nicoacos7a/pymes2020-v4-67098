@@ -19,6 +19,8 @@ import { MockArticulosService } from './services/mock-articulos.service';
 import { ReactiveFormsModule } from "@angular/forms";
 import { ArticulosService } from './services/articulos.service';
 
+import { NgbPaginationModule } from "@ng-bootstrap/ng-bootstrap";
+
 
 @NgModule({
   imports:
@@ -33,6 +35,7 @@ import { ArticulosService } from './services/articulos.service';
       { path: '', redirectTo: '/inicio', pathMatch: 'full' }
       ]),
       ReactiveFormsModule,
+      NgbPaginationModule,
     ],
   declarations: 
   [ 
