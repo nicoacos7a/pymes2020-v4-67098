@@ -84,7 +84,13 @@
         >
       </div>
       <div class="col-sm-6 text-center">
-        Directiva paginador aqui
+        <ngb-pagination
+          [(page)]="Pagina" 
+          (pageChange)="Buscar()" 
+          [pageSize]="10" 
+          [maxSize]="10"
+          [collectionSize]="RegistrosTotal">
+        </ngb-pagination>
       </div>
       <div class="col-sm-3 text-right">
         <button
